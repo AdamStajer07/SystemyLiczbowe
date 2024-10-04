@@ -61,6 +61,8 @@ btn.addEventListener('click', () => {
                     else if (max <= 0) {
                         let a, b
                         a = min.slice(1, min.length), b = max.slice(1, max.length)
+                        if (num == 0) num = -1
+                            numbers[i] = num
                         numbers[i] = Math.round(Math.random() * (b - a) + a)
                     }
                     else {
