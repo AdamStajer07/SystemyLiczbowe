@@ -45,28 +45,27 @@ btn.addEventListener('click', () => {
                         if (Math.round(Math.random() * 10) % 2 == 1) {
                             a = 0, b = max
                             num = Math.round(Math.random() * (b - a) + a)
-                            console.log(num)
                             if (num == 0) num = 1
-                            numbers[i] = num
                         }
                         else {
                             a = min.slice(1, min.length), b = 0
                             num = Math.round(Math.random() * (b - a) + a)
-                            console.log(num)
                             if (num == 0) num = -1
-                            numbers[i] = num
-
                         }
+                        numbers[i] = num
                     }
                     else if (max <= 0) {
-                        let a, b
+                        let a, b, num
                         a = min.slice(1, min.length), b = max.slice(1, max.length)
+                        num = Math.round(Math.random() * (b - a) + a)
                         if (num == 0) num = -1
-                            numbers[i] = num
-                        numbers[i] = Math.round(Math.random() * (b - a) + a)
+                        numbers[i] = num
                     }
                     else {
-                        numbers[i] = Math.round(Math.random() * (max - min) + min)
+                        let num;
+                        num = Math.round(Math.random() * (max - min) + min)
+                        if (num == 0) num = max
+                        numbers[i] = num
                     }
 
                 }
