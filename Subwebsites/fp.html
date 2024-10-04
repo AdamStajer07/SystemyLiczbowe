@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Uzupełnić -->
+        <meta name="description" content="opis strony">
+        <meta name="keywords" content="słowa kluczowe">
+    
+        <meta name="robots" content="all">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/main.css">
+        
+        <script src="../Script/function.js" defer></script>
+        <script src="../Script/fp.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1><a href="../index.html">Systemy liczbowe</a></h1>
+        <nav>
+            <a href="binary.html">Binarny</a>
+            <a href="octal.html">Ósemkowy</a>
+            <a href="hexadecimal.html">Szesnastkowy</a>
+            <a href="zm.html">ZM</a>
+            <a href="u1.html">U1</a>
+            <a href="u2.html">U2</a>
+            <a href="fp.html">FP</a>
+        </nav>
+        <div><a href="excersizeGenerator.html">Zadania dla nauczyciela</a></div>
+    </header>
+    <main class="main-sw">
+        <h2 class="main-sw__title">System U2 (Uzupełnienie do dwóch)</h2>
+        <article class="main-sw__article">
+            <p class="main-sw__p">
+                Zapis FP (Zmienno-przecinkowy) - umożliwia obliczanie liczb zmienno-przecinkowych w systemie binarnym. Sposób obliczania części całkowitej omawialiśmy <a href="binary.html">tutaj</a> Natomiast cześć po przecinku oblicza się niemal tak samo, tylko wagi liczymy od lewej; wykładniki wag liczymy w dół zaczynając od -1;
+            </p>
+            <br>
+            <h2 class="main-sw__title">Wagi w zapisie FP</h2>
+            <img src="../IMG/fp1.png" alt="" class="main-sw__img">
+            <br><br>
+            <h2 class="main-sw__title">Zapis FP liczby 21.625</h2>
+            <img src="../IMG/fp2.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Obliczamy wartość przed przecinkiem (21) oraz po przecinku (0,625) i wychodzi wynik 10101,101
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę 47,875<sub>(10)</sub> w systemie FP
+            </p>
+            <img src="../IMG/fp3.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Dobieramy takie wagi, żeby ich suma przed przecinkiem wyniosła 47, a po przecinku 0,875, dzięki czemu dostaniemy wynik 101111,111<sub>(fp)</sub>
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę 1101,1<sub>(fp)</sub> w systemie dziesiętnym
+            </p>
+            <img src="../IMG/fp4.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Obliczamy wartości wag w miejscach jedynek, a ich suma daje nam wynik 13,5<sub>(10)</sub> 
+            </p>
+        </article>
+        <section class="excersize">
+            <h2 class="main-sw__title">Zadania</h2>
+        </section>
+    </main>
+</body>
+</html>

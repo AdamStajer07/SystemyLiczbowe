@@ -1,0 +1,41 @@
+.firstValue {
+    height: 64px;
+
+    margin: .5rem;
+    padding: .5rem;
+    background-color: $black;
+    color: $white;
+    @include font(1.25rem, bold);
+    border: 2px solid rgba($color: red, $alpha: .5);
+    cursor: pointer;
+
+    & option {
+        background-color: $black;
+        color: $white;
+        text-align: center;
+        @include font(1rem, bold);
+        padding: 2rem;
+        cursor: pointer;
+    }
+}
+
+.twiceValue {
+    @extend .firstValue;
+}
+
+.length {
+    height: 64px;
+    margin: .5rem;
+    padding: .5rem;
+    background-color: $black;
+    color: $white;
+    @include font(1.25rem, bold);
+    border: 2px solid rgba($color: red, $alpha: .5);
+    max-width: 200px;
+}
+
+.btn {
+    @extend .length;
+    max-width: 400px;
+    cursor: pointer;
+}

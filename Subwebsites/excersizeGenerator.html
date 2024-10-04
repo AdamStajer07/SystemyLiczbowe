@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Uzupełnić -->
+        <meta name="description" content="opis strony">
+        <meta name="keywords" content="słowa kluczowe">
+    
+        <meta name="robots" content="all">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/main.css">
+        
+        <script src="../Script/function.js" defer></script>
+        <script src="../Script/excersizeGenerator.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1><a href="../index.html">Systemy liczbowe</a></h1>
+        <nav>
+            <a href="binary.html">Binarny</a>
+            <a href="octal.html">Ósemkowy</a>
+            <a href="hexadecimal.html">Szesnastkowy</a>
+            <a href="zm.html">ZM</a>
+            <a href="u1.html">U1</a>
+            <a href="u2.html">U2</a>
+            <a href="fp.html">FP</a>
+        </nav>
+        <div><a href="excersizeGenerator.html">Zadania dla nauczyciela</a></div>
+    </header>
+    <main class="main-sw">
+        <h2 class="main-sw__title">Zadania dla nauczyciela</h2>
+        <article class="main-sw__article">
+            <div class="generateValue">
+                <select class="firstValue">
+                    <option value="10">10</option>
+                    <option value="2">2</option>
+                    <option value="8">8</option>
+                    <option value="16">16</option>
+                    <option value="ZM">ZM</option>
+                    <option value="U1">U1</option>
+                    <option value="U2">U2</option>
+                    <option value="FP">FP</option>
+                </select>
+                <select class="twiceValue">
+                    <option value="10">10</option>
+                    <option value="2">2</option>
+                    <option value="8">8</option>
+                    <option value="16">16</option>
+                    <option value="ZM">ZM</option>
+                    <option value="U1">U1</option>
+                    <option value="U2">U2</option>
+                    <option value="FP">FP</option>
+                </select>
+                <input type="number" min="1" placeholder="Ilość zadań" class="excersizeLength length">
+            </div>
+            <div>
+                <input type="number" min="1" placeholder="Minimalny zakres liczb" class="minLength length">
+                <input type="number" min="1" placeholder="Maksymalny zakres liczb" class="maxLength length">
+            </div>
+            <div>
+                <button class="btn generateBtn">Wygeneruj zadania</button>
+                <button class="btn deleteBtn">Wyczyść</button>
+            </div>
+        </article>
+        <section class="excersize">
+        </section>
+    </main>
+</body>
+</html>

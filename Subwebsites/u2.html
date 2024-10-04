@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Uzupełnić -->
+        <meta name="description" content="opis strony">
+        <meta name="keywords" content="słowa kluczowe">
+    
+        <meta name="robots" content="all">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/main.css">
+        
+        <script src="../Script/function.js" defer></script>
+        <script src="../Script/u2.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1><a href="../index.html">Systemy liczbowe</a></h1>
+        <nav>
+            <a href="binary.html">Binarny</a>
+            <a href="octal.html">Ósemkowy</a>
+            <a href="hexadecimal.html">Szesnastkowy</a>
+            <a href="zm.html">ZM</a>
+            <a href="u1.html">U1</a>
+            <a href="u2.html">U2</a>
+            <a href="fp.html">FP</a>
+        </nav>
+        <div><a href="excersizeGenerator.html">Zadania dla nauczyciela</a></div>
+    </header>
+    <main class="main-sw">
+        <h2 class="main-sw__title">System U2 (Uzupełnienie do dwóch)</h2>
+        <article class="main-sw__article">
+            <p class="main-sw__p">
+                Zapis Uzupełnienie do dwóch (U2) - System U1 częściowo rozwiącywał problem z operacjami artmetycznymi, jednak nadal posiadał dwa zera. Kolejnym podejściem do tego problemu jest zapis U2. Do liczby zapisanej w systemie U1 dodajemy 1 i otrzymujemy liczbę w zapisie U2
+            </p>
+            <br>
+            <h2 class="main-sw__title">Zapis U2 liczby -21</h2>
+            <img src="../IMG/u2.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Jeśli przy dodawaniu jedynki nastąpi jej przeniesienie na bit znaku, nie jest on brany pod uwagę.
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę -47 <sub>(10)</sub> w systemie U2
+            </p>
+            <img src="../IMG/u2_2.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Zapisujemy moduł liczby -47<sub>(10)</sub> w systemie binarnym. Do otrzymanego wyniku dopisujemy 0 z lewej. Następnie negujemy tą liczbę, dzięki czemu otrzymujemy wynik: 1010000<sub>(U1)</sub>. Do tego dodajemy 1 i otrzymujemy wynik: 1010001<sub>(U2)</sub>
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę 1101 <sub>(U2)</sub> w systemie dziesiętnym
+            </p>
+            <img src="../IMG/u2_3.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Wiemy, że pierwszy bit w systemie U2 to bit znaku. W tym przykładzie wynosi on 1, czyli liczba jest ujemna. Od modułu liczby odejmujemy jeden, następnie negujemy moduł i konwertujemy na system dziesiętny, dzięki czemu uzyskujemy wynik: -3<sub>(10)</sub>
+            </p>
+        </article>
+        <section class="excersize">
+            <h2 class="main-sw__title">Zadania</h2>
+        </section>
+    </main>
+</body>
+</html>

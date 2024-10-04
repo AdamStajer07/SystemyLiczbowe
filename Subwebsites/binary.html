@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Uzupełnić -->
+        <meta name="description" content="opis strony">
+        <meta name="keywords" content="słowa kluczowe">
+    
+        <meta name="robots" content="all">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/main.css">
+        
+        <script src="../Script/function.js" defer></script>
+        <script src="../Script/binary.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1><a href="../index.html">Systemy liczbowe</a></h1>
+        <nav>
+            <a href="binary.html">Binarny</a>
+            <a href="octal.html">Ósemkowy</a>
+            <a href="hexadecimal.html">Szesnastkowy</a>
+            <a href="zm.html">ZM</a>
+            <a href="u1.html">U1</a>
+            <a href="u2.html">U2</a>
+            <a href="fp.html">FP</a>
+        </nav>
+        <div><a href="excersizeGenerator.html">Zadania dla nauczyciela</a></div>
+    </header>
+    <main class="main-sw">
+        <h2 class="main-sw__title">System Binarny (Dwójkowy)</h2>
+        <article class="main-sw__article">
+            <p class="main-sw__p">
+                System dwójkowy (binarny) - najprostszy system liczbowy. System posiada dwa znaki: 0 i 1. Tego systemu używa komputer. Istnieją dwa sposoby konwersji z systemu dziesiętnego na binarny.
+            </p>
+            <br>
+            <h2 class="main-sw__title">Sposób 1</h2>
+            <img src="../IMG/bin1.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Liczbę dzielimy przez dwa i zapisujemy wynik reszty z dzielenia. Otrzymane w ten sposób liczby 0 i 1 zapisujemy w linii od końca otrzymując wynik 
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Sposób 2</h2>
+            <p class="main-sw__p">
+                W tym sposobie użyjemy tzw. wag. Kolejne pozycje cyfr od prawej strony odpowiadają kolejnym potęgom liczby 2, zaczynając od 0 jako wykładnika potęgi. 
+            </p>
+            <img src="../IMG/bin2.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Gdy chcemy dokonać konwersji, musimy tak dobrać takie wagi, aby po dodaniu ich wyszła nasza liczba. W miejsca tych wag wpisujemy 1, natomiast w pozostałych 0, po czym otrzymujemy wynik
+            </p>
+            <img src="../IMG/bin3.png" alt="" class="main-sw__img">
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz w systemie dwójkowym liczbę 21<sub>(10)</sub>
+            </p>
+            <img src="../IMG/bin4.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Suma liczb: 16 + 4 + 1 będzie równa 21, więc przy tych wagach zapisujemy jedynki, natomiast w pozostałych zapisujemy zera i dostajemy wynik: 10101<sub>(2)</sub>
+            </p>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz w systemie dziesiętnym liczbę 11001<sub>(2)</sub>
+            </p>
+            <img src="../IMG/bin6.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                W miejsca jedynek podstawiamy wartości wag. Następnie dodajemy te wartości i otrzymujemy liczbę 25<sub>(10)</sub>
+            </p>
+            <h2 class="main-sw__title">Dodawanie liczb binarnych</h2>
+            <p class="main-sw__p">
+                dodaj w systemie dwójkowym liczbę 14<sub>(10)</sub> i 7<sub>(10)</sub>
+            </p>
+            <img src="../IMG/bin5.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Dodajemy do siebie liczby słupkowo. Zaczynamy od prawej. Jeśli w kolumnie będzie jedna jedynka, zapisujemy 1, jeśli dwie zapisujemy 0 i w kolejnej kolumnie dodajemy dodatkowe 1, jeśli trzy zapisujemy 1 i w następnej kolumnie dodajemy dodatkowe 1.
+            </p>
+        </article>
+        <section class="excersize">
+            <h2 class="main-sw__title">Zadania</h2>
+        </section>
+    </main>
+</body>
+</html>

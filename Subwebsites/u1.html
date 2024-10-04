@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Uzupełnić -->
+        <meta name="description" content="opis strony">
+        <meta name="keywords" content="słowa kluczowe">
+    
+        <meta name="robots" content="all">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/main.css">
+        
+        <script src="../Script/function.js" defer></script>
+        <script src="../Script/u1.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1><a href="../index.html">Systemy liczbowe</a></h1>
+        <nav>
+            <a href="binary.html">Binarny</a>
+            <a href="octal.html">Ósemkowy</a>
+            <a href="hexadecimal.html">Szesnastkowy</a>
+            <a href="zm.html">ZM</a>
+            <a href="u1.html">U1</a>
+            <a href="u2.html">U2</a>
+            <a href="fp.html">FP</a>
+        </nav>
+        <div><a href="excersizeGenerator.html">Zadania dla nauczyciela</a></div>
+    </header>
+    <main class="main-sw">
+        <h2 class="main-sw__title">System U1 (Uzupełnienie do jednego)</h2>
+        <article class="main-sw__article">
+            <p class="main-sw__p">
+                Zapis Uzupełnienie do jednego (U1) - System ZM sprawiał kilka problemów, m.in. przy operacjach artmetycznych. Drugim podejściem do tego problemu jest zapis U1. Każdy bit ma swoje wagi (w sys. ZM bit znaku nie miał wagi). Tak samo jak w zapisie ZM pierwszy bit od lewej jest bitem znaku, który dla 0 oznacza liczbę dodatnią, a dla 1 ujemną.
+            </p>
+            <h2 class="main-sw__title">Zapis U1 liczby -21</h2>
+            <img src="../IMG/u1.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Żeby otrzymać liczbę -21 w zapisie U1 negujemy tą liczbę zapisaną w sys. dwójkowym wraz z dodanym z lewej bitem znaku. Po negacji bit znaku powinien wynosić 1, jeśli liczba jest ujemna, 0 jeśli jest dodatnia.
+            </p>
+            <br>
+            <p class="main-sw__p">
+                W tym systemie nie ma już problemów z operacjami matematycznymi, jednak nadal jest problem z zerami. Istnieje 0 mające wszystkie bity równe zero, oraz -0 mające wszystkie bity równe 1.
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę -31 <sub>(10)</sub> w systemie U1
+            </p>
+            <img src="../IMG/u1_2.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Zapisujemy moduł liczby -31<sub>(10)</sub> w systemie binarnym. Do otrzymanego wyniku dopisujemy 0 z lewej. Następnie negujemy tą liczbę, dzięki czemu otrzymujemy wynik: 100000 <sub>(U1)</sub>
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę 101101 <sub>(U1)</sub> w systemie dziesiętnym
+            </p>
+            <img src="../IMG/u1_3.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Wiemy, że w zapisie U1 pierwszy bit od lewej, to bit znaku. W tym przykładzie wynosi on 1, czyli liczba jest ujemna. Oddzielamy bit znaku od modułu, następnie negujemy moduł. Wartość modułu konwertujemy do systemu dziesiętnego, zapisujemy minus z lewej, dzięki czemu uzyskaliśmy wynik: -18<sub>(10)</sub>
+            </p>
+        </article>
+        <section class="excersize">
+            <h2 class="main-sw__title">Zadania</h2>
+        </section>
+    </main>
+</body>
+</html>

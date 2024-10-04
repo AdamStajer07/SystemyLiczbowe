@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Uzupełnić -->
+        <meta name="description" content="opis strony">
+        <meta name="keywords" content="słowa kluczowe">
+    
+        <meta name="robots" content="all">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/main.css">
+        
+        <script src="../Script/function.js" defer></script>
+        <script src="../Script/zm.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1><a href="../index.html">Systemy liczbowe</a></h1>
+        <nav>
+            <a href="binary.html">Binarny</a>
+            <a href="octal.html">Ósemkowy</a>
+            <a href="hexadecimal.html">Szesnastkowy</a>
+            <a href="zm.html">ZM</a>
+            <a href="u1.html">U1</a>
+            <a href="u2.html">U2</a>
+            <a href="fp.html">FP</a>
+        </nav>
+        <div><a href="excersizeGenerator.html">Zadania dla nauczyciela</a></div>
+    </header>
+    <main class="main-sw">
+        <h2 class="main-sw__title">System ZM (Znak-Moduł)</h2>
+        <article class="main-sw__article">
+            <p class="main-sw__p">
+                Zapis Znak-Moduł (ZM) - składa się z bitu znaku oraz bitu wartości liczby. Dla liczb dodatnich bit znaku wynosi 0, a dla ujemnych 1. Format zapisu ZM musi być ŚCIŚLE USTALONY, aby było wiadomo, który bit jest bitem znaku
+            </p>
+            <h2 class="main-sw__title">Zapis ZM liczby -21</h2>
+            <img src="../IMG/zm1.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                W tym zapisie napotykamy jednak na kilka problemów. Istnieją dwa zera: 0 z bitem znaku równym zero oraz 0 z bitem znaku równym 1. W tym systemie napotykamy także na błędy w operacjach artmetycznych. 
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę -17 <sub>(10)</sub> w systemie ZM
+            </p>
+            <img src="../IMG/zm2.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Zapisujemy moduł naszej liczby w systemie binarnym, dodajemy po lewej stronie bit znaku (1 dla liczb ujemnych) i otrzymujemy wynik 
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę 111010 <sub>(ZM)</sub> w systemie dziesiętnym
+            </p>
+            <img src="../IMG/zm3.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Oddzielamy bit znaku od modułu, następnie zapisujemy wartość modułu w systemie dziesiętnym, dodajemy bit znaku (znak minus, bit znaku wynosi 1) po lewej
+            </p>
+        </article>
+        <section class="excersize">
+            <h2 class="main-sw__title">Zadania</h2>
+        </section>
+    </main>
+</body>
+</html>

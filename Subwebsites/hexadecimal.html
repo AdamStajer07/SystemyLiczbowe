@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Uzupełnić -->
+        <meta name="description" content="opis strony">
+        <meta name="keywords" content="słowa kluczowe">
+    
+        <meta name="robots" content="all">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/main.css">
+        
+        <script src="../Script/function.js" defer></script>
+        <script src="../Script/hexadecimal.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1><a href="../index.html">Systemy liczbowe</a></h1>
+        <nav>
+            <a href="binary.html">Binarny</a>
+            <a href="octal.html">Ósemkowy</a>
+            <a href="hexadecimal.html">Szesnastkowy</a>
+            <a href="zm.html">ZM</a>
+            <a href="u1.html">U1</a>
+            <a href="u2.html">U2</a>
+            <a href="fp.html">FP</a>
+        </nav>
+        <div><a href="excersizeGenerator.html">Zadania dla nauczyciela</a></div>
+    </header>
+    <main class="main-sw">
+        <h2 class="main-sw__title">System Szesnastkowy (Hexadecymalny)</h2>
+        <article class="main-sw__article">
+            <p class="main-sw__p">
+                System Hexadecymalny (Szesnastkowy) - zawiera 16 znaków: 0-9 oraz litery A-F odpowiadające libczom 10-15. Tego systemu używa się m.in w zapisie kolorów czy zapisie adresu MAC karty sieciowej
+            </p>
+            <br>
+            <h2 class="main-sw__title">Konwersja z systemu dwójkowego na hexadecymalny</h2>
+            <img src="../IMG/hex1.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Dzielimy naszą liczbę co 4 bity (licząc od prawej). Następnie obliczamy i zapisujemy każdą z części. Dzięki temu otrzymujemy wynik.
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę 8B3 <sub>(16)</sub> w systemie binarnym
+            </p>
+            <img src="../IMG/hex3.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Każdą z cyfr liczby 8B3<sub>(16)</sub> zamieniamy na cyfrę w systemie binarnym. Każda cyfra zajmuje 4 bity w zapisie binarnym, więc jeśli cyfra ma mniej niż 4 bity, dopisujemy 0 z lewej strony. W tym przypadku cyfra 3 w zapisie binarnym ma tylko dwa bity, więc dopisujemy 2 zera z lewej.
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę 1111 0100 <sub>(2)</sub> w systemie heksadecymalnym
+            </p>
+            <img src="../IMG/hex4.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Dzielimy naszą liczbę na części co 4 bity (od prawej). Obliczamy każdą część, dzięki czemu otrzymujemy wynik: F4<sub>(16)</sub>
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę 21 <sub>(10)</sub> w systemie heksadecymalnym
+            </p>
+            <img src="../IMG/hex2.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Liczbę decymalną zamieniamy na liczbę binarną.
+                Następnie dzielimy ją co 4 bity (licząc od prawej). Potem obliczamy i zapisujemy każdą z części. Dzięki temu otrzymujemy wynik.
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę 5E<sub>(16)</sub> w systemie decymalnym
+            </p>
+            <img src="../IMG/hex5.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Każdą z cyfr liczby 8B3(16) zamieniamy na cyfrę w systemie binarnym. Następnie dodajemy wartości wag, tam gdzie występują jedynki i otrzymujemy wynik: 94 <sub>(10)</sub>
+            </p>
+        </article>
+        <section class="excersize">
+            <h2 class="main-sw__title">Zadania</h2>
+        </section>
+    </main>
+</body>
+</html>

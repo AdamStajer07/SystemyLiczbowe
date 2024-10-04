@@ -1,0 +1,82 @@
+.main-sw {
+    width: 80%;
+    margin: 2rem auto;   
+    padding: 2rem 0 0;
+    background-color: rgb(40, 40, 40);
+    color: $white;
+    border: 2px solid rgba($color: red, $alpha: .5);
+    border-radius: 10px;
+
+    &__article {
+        @include flex(center, center, column, wrap);
+        margin: 3rem 0;
+    }
+    &__title {
+        width: 100%;
+        text-align: center;
+        @include font(2.5rem, bold);
+        padding: 1rem 0 3rem;
+    }
+    &__img {
+        width: 60%;
+    }
+    &__p {
+        width: 85%;
+        @include font(1.25rem) {
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        & a {
+            @include font(1.25, bold);
+            color: $white;
+            text-decoration: underline;
+        }
+    }
+}
+.excersize {
+    @include flex(center, center, column, wrap);
+    background-color: rgba(20, 20, 20, .9);
+    &__box {
+        padding: 2rem;
+        & div {
+            @include flex(space-evenly, center, row, wrap);
+
+        }
+        & input, & p {
+            background-color: rgba(40, 40, 40, .9);
+            color: white;
+            @include font(1.5rem, bold);
+            border: 2px solid gray;
+            padding: .25rem .5rem;
+            width: 250px;
+            height: 50px;
+            margin: 0 1rem;
+            &:hover {
+                background-color: rgba(60, 60, 60, .9);
+            }
+            &:disabled:hover {
+                background-color: rgba(40, 40, 40, .9);
+
+            }
+        }
+        & button {
+            height: 50px;
+            padding: 0.25rem 0.5rem;
+            color: white;
+            background-color: rgba(40, 40, 40, .9);
+            @include font(1.2rem, bold);
+            cursor: pointer;
+            border: 2px solid gray;
+            &:hover {
+            background-color: rgba(60, 60, 60, .9);
+                
+            }
+        }
+        & > span {
+            display: block;
+            text-align: center;
+            @include font(1.5rem, bold);
+            padding: 1rem 0 0;
+        }
+    }
+}   

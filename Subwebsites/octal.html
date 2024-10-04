@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Uzupełnić -->
+        <meta name="description" content="opis strony">
+        <meta name="keywords" content="słowa kluczowe">
+    
+        <meta name="robots" content="all">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/main.css">
+        
+        <script src="../Script/function.js" defer></script>
+        <script src="../Script/octal.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1><a href="../index.html">Systemy liczbowe</a></h1>
+        <nav>
+            <a href="binary.html">Binarny</a>
+            <a href="octal.html">Ósemkowy</a>
+            <a href="hexadecimal.html">Szesnastkowy</a>
+            <a href="zm.html">ZM</a>
+            <a href="u1.html">U1</a>
+            <a href="u2.html">U2</a>
+            <a href="fp.html">FP</a>
+        </nav>
+        <div><a href="excersizeGenerator.html">Zadania dla nauczyciela</a></div>
+    </header>
+    <main class="main-sw">
+        <h2 class="main-sw__title">System Ósemkowy (Oktalny)</h2>
+        <article class="main-sw__article">
+            <p class="main-sw__p">
+                System ósemkowy - posiada osiem znaków: 0-7. Jest rzadko stosowany; można go spotkać n.p. podczas przypisywania uprawnień w systemie komputerowym Linux
+            </p>
+            <br>
+            <h2 class="main-sw__title">Konwersja z systemu dwójkowego na ósemkowy</h2>
+            <img src="../IMG/oct1.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Dzielimy naszą liczbę co 3 bity (licząc od prawej). Następnie obliczamy każdą część jak w systemie binarnym i zapisujemy każdą z części. Dzięki temu otrzymujemy wynik: 47<sub>(8)</sub>
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę 110111 <sub>(2)</sub> w systemie oktalnym
+            </p>
+            <img src="../IMG/oct3.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Dzielimy liczbę co trzy bity od prawej. Potem obliczamy i zapisujemy wynik. Otrzymaliśmy liczbę 67<sub>(8)</sub>
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę 47 <sub>(8)</sub> w systemie oktalnym
+            </p>
+            <img src="../IMG/oct5.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Zapisujemy każdą cyfrę z liczby 47 <sub>(8)</sub> w systemie binarnym. Po zapisaniu wszystkich cyfr otrzymujemy ostateczny wynik: 100111<sub>(2)</sub> 
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę 21 <sub>(10)</sub> w systemie oktalnym
+            </p>
+            <img src="../IMG/oct2.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Zamieniamy liczbę 21 <sub>(10)</sub> na liczbę w systemie binarnym. Następnie dzielimy liczbę co trzy bity od prawej. Potem obliczamy i zapisujemy wynik. Otrzymaliśmy liczbę 25<sub>(8)</sub>
+            </p>
+            <br><br>
+            <h2 class="main-sw__title">Przykład</h2>
+            <p class="main-sw__p">
+                Zapisz liczbę 47 <sub>(8)</sub> w systemie dziesiętnym
+            </p>
+            <img src="../IMG/oct4.png" alt="" class="main-sw__img">
+            <p class="main-sw__p">
+                Każdą z cyfr liczby 47<sub>(8)</sub> zamieniamy na liczbę w systemie binarnym. Otrzymany wynik konwertujemy na system dziesiętny, otrzymując wynik: 39<sub>(10)</sub>
+            </p>
+        </article>
+        <section class="excersize">
+            <h2 class="main-sw__title">Zadania</h2>
+        </section>
+    </main>
+</body>
+</html>
