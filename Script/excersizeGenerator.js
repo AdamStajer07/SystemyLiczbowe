@@ -45,12 +45,12 @@ btn.addEventListener('click', () => {
                         if (Math.round(Math.random() * 10) % 2 == 1) {
                             a = 0, b = max
                             num = Math.round(Math.random() * (b - a) + a)
-                            if (num == 0) num = 1
+                            if (num == 0) num = Math.round((a + b) / 2)
                         }
                         else {
                             a = min.slice(1, min.length), b = 0
                             num = Math.round(Math.random() * (b - a) + a)
-                            if (num == 0) num = -1
+                            if (num == 0) num = Math.round((a + b) / 2)
                         }
                         numbers[i] = num
                     }
@@ -58,13 +58,13 @@ btn.addEventListener('click', () => {
                         let a, b, num
                         a = min.slice(1, min.length), b = max.slice(1, max.length)
                         num = Math.round(Math.random() * (b - a) + a)
-                        if (num == 0) num = -1
+                        if (num == 0) num = Math.round((a + b) / 2)
                         numbers[i] = num
                     }
                     else {
                         let num;
                         num = Math.round(Math.random() * (max - min) + min)
-                        if (num == 0) num = max
+                        if (num == 0) num = Math.round((a + b) / 2)
                         numbers[i] = num
                     }
 
